@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  get "up" => "rails/health#show", as: :rails_health_check
-  get "home", controller: "home", action: "index"
-  get "estudantes", to: "estudante#index"
+  resources :posts
+  get '/home', controller: 'home', action: 'index'
+  get 'home2', to: 'home#index'
+  get 'estudantes2', to: 'estudante#index', as: 'estudantes'
 
   root "home#index"
-
-  get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
-  get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 end
