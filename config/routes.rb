@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resources :posts
-  get '/home', controller: 'home', action: 'index'
-  get 'home2', to: 'home#index'
-  get 'estudantes2', to: 'estudante#index', as: 'estudantes'
+  get "inicio", controller: "home", action: "index", as: "home"
+  get "estudante", to: "estudante#index", as: "estudantes"
 
   root "home#index"
+
 end
+
