@@ -103,6 +103,7 @@ GEM
     error_highlight (0.7.0)
     erubi (1.13.1)
     ffi (1.17.2-x64-mingw-ucrt)
+    ffi (1.17.2-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -168,7 +169,7 @@ GEM
     psych (5.2.6)
       date
       stringio
-    puma (6.6.0)
+    puma (7.0.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.16)
